@@ -72,8 +72,8 @@
     <tbody>
         <tr>
             <td>2024 B</td>
-            <td>12 de Noviembre</td>
-            <td>16 de Noviembre</td>
+            <td>12 de Diciembre</td>
+            <td>21 de Diciembre</td>
         </tr>
     </tbody>
 </table>
@@ -291,6 +291,7 @@ Este proyecto permitió:
 
 Este trabajo proporciona una base funcional y expandible para sistemas más complejos. Aunque sencillo, cumple con los objetivos planteados y puede evolucionar hacia soluciones más completas con tiempo y recursos adicionales.
 
+<div>
 [![Debian][Debian]][debian-site]
 [![Git][Git]][git-site]
 [![GitHub][GitHub]][github-site]
