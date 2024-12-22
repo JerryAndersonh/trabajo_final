@@ -117,36 +117,6 @@ El sistema está diseñado para ser fácil de usar, seguro y escalable.
 
 AJAX se utiliza en el sistema para gestionar las operaciones CRUD de manera asíncrona. Esto significa que los usuarios pueden realizar acciones como crear, leer, actualizar y eliminar gastos sin que la página se recargue. Esto mejora significativamente la experiencia del usuario al reducir el tiempo de espera.
 
-### Funcionalidades de AJAX en CRUD
-
-- **Crear**: Se envían los datos del formulario al servidor mediante AJAX para crear un nuevo gasto.
-- **Leer**: Los datos de los gastos se recuperan y se muestran dinámicamente en la interfaz.
-- **Actualizar**: Los registros existentes pueden ser editados y actualizados sin necesidad de recargar la página.
-- **Eliminar**: AJAX permite la eliminación de un registro seleccionado con confirmación previa.
-
-### Ejemplo
-El archivo `manage_expense.pl` maneja las solicitudes AJAX, interactuando directamente con la base de datos MySQL para realizar estas operaciones.
-
----
-
-## Uso de Variables de Sesión
-
-El sistema utiliza **variables de sesión** para garantizar que solo los usuarios autenticados puedan acceder a las funcionalidades del sistema. Se implementa mediante la biblioteca `CGI::Session`.
-
-### Detalles de Implementación
-
-1. **Inicio de Sesión**: 
-   - Cuando un usuario inicia sesión, su `UserId` se almacena en una variable de sesión (`detsuid`).
-   - El sistema verifica esta variable en cada solicitud para determinar si el usuario está autenticado.
-
-2. **Cierre de Sesión**:
-   - El archivo `logout.pl` destruye la sesión activa, cerrando la sesión del usuario.
-
-3. **Seguridad**:
-   - Las contraseñas se almacenan cifradas utilizando MD5.
-   - Las sesiones están protegidas con cookies generadas dinámicamente.
-
----
 
 ## Base de Datos
 
