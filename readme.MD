@@ -22,7 +22,6 @@
         <tr>
             <th>Estudiante</th>
             <th>Escuela</th>
-            <th>Asignatura</th>
         </tr>
     </thead>
     <tbody>
